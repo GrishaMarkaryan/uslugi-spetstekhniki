@@ -201,7 +201,7 @@ ul {
   text-align: center;
   padding: 80px 20px 60px;
   background:
-    linear-gradient(160deg, rgba(17,20,24,0.60) 0%, rgba(28,33,40,0.75) 100%),
+    linear-gradient(160deg, rgba(17,20,24,0.75) 0%, rgba(28,33,40,0.85) 100%),
     url('images/Manipulyator_main.jpg') center / cover no-repeat;
 }
 
@@ -211,7 +211,7 @@ ul {
 
 .hero__title {
   font-size: clamp(1.8rem, 6vw, 3rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.15;
   color: var(--white);
   margin-bottom: 16px;
@@ -227,11 +227,87 @@ ul {
   margin-right: auto;
 }
 
+.hero__badge {
+  display: inline-block;
+  background: rgba(245,166,35,.15);
+  border: 1px solid rgba(245,166,35,.35);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
 .hero__actions {
   display: flex;
   gap: 12px;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.hero__machines {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.hero__machine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.11);
+  border-radius: 10px;
+  padding: 12px 18px;
+  min-width: 110px;
+  gap: 2px;
+}
+
+.hero__machine-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.hero__machine-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.hero__machine-spec {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,.45);
+}
+
+.hero__coverage {
+  margin-top: 32px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+
+.hero__coverage-label {
+  font-size: 0.83rem;
+  color: rgba(255,255,255,.65);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.hero__coverage-cities-line {
+  font-size: 0.99rem;
+  color: rgba(255, 255, 255, 0.63);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.hero__coverage-note {
+  font-size: 0.74rem;
+  color: rgba(255,255,255,.28);
 }
 
 /* =========================================
@@ -407,6 +483,81 @@ ul {
 
 .pricing__cta {
   text-align: center;
+}
+
+/* =========================================
+   WORKS (виды работ)
+   ========================================= */
+.works {
+  padding: 72px 0;
+  background: var(--dark3);
+}
+
+.works__single {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.works__tag {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-size: 0.87rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+/* =========================================
+   COVERAGE (зона обслуживания)
+   ========================================= */
+.coverage {
+  padding: 64px 0;
+  background: var(--dark2);
+  text-align: center;
+}
+
+.coverage__intro {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: -20px;
+  margin-bottom: 32px;
+}
+
+.coverage__cities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 760px;
+  margin: 0 auto 20px;
+}
+
+.coverage__city {
+  background: var(--dark3);
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.coverage__city--main {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--dark);
+  font-weight: 700;
+}
+
+.coverage__note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 16px;
 }
 
 /* =========================================
