@@ -125,6 +125,50 @@ ul {
   box-shadow: 0 4px 14px rgba(37, 211, 102, .35);
 }
 
+.btn--telegram {
+  background: #2AABEE;
+  color: #fff;
+}
+
+.btn--telegram:hover {
+  background: #1d96d4;
+  box-shadow: 0 4px 14px rgba(42, 171, 238, .4);
+}
+
+.btn--max {
+  background: #6a3de8;
+  color: #fff;
+}
+
+.btn--max:hover {
+  background: #5a31cc;
+  box-shadow: 0 4px 14px rgba(106, 61, 232, .4);
+}
+
+.btn--avito {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #ececec;
+  border: 1px solid rgba(255,255,255,.22);
+  color: black;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.btn--avito:hover {
+  background: #cecece;
+  border-color: rgba(255,255,255,.4);
+}
+
+.contact__avito {
+  margin-top: 18px;
+}
+
 .btn--full {
   width: 100%;
 }
@@ -132,6 +176,7 @@ ul {
 .btn--lg {
   padding: 16px 36px;
   font-size: 1.05rem;
+  width: 140px;
 }
 
 /* =========================================
